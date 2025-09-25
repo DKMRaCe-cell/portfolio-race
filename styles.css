@@ -1,0 +1,272 @@
+/* ===========================
+   RESET & GLOBAL STYLES
+=========================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  text-align: center;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+.nav-bar {
+  background-color: #111;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #00aaff;
+}
+
+/* ===========================
+   HEADER / ACCUEIL
+=========================== */
+#accueil {
+  padding: 3rem 1rem;
+}
+
+.photo-profil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 1rem auto;
+  object-fit: cover;
+  border: 3px solid #00aaff;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: #111;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-green {
+  display: inline-block;
+  background-color: #00cc66;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-green:hover {
+  background-color: #00aa44;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #00cc66;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #00cc66;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00cc66;
+  color: #fff;
+}
+
+/* ===========================
+   PROJETS
+=========================== */
+.projets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.projet-ligne {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.projet {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projet:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.projet h3 {
+  color: #00aaff;
+  margin-bottom: 0.5rem;
+}
+
+.projet p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.projet a {
+  font-weight: 600;
+  color: #00cc66;
+}
+
+.projet a:hover {
+  color: #009944;
+}
+
+/* ===========================
+   COMPETENCES & EXPERIENCES
+=========================== */
+.competences-list,
+.projets-personnels {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.competences-list li,
+.projets-personnels li {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.competences-list li i {
+  color: #00cc66;
+  margin-right: 0.5rem;
+}
+
+.experience-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.experience {
+  background-color: #fff;
+  padding: 1.5rem;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.experience h3 {
+  color: #00aaff;
+  margin-bottom: 0.5rem;
+}
+
+.experience p,
+.experience ul {
+  text-align: left;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+#contact {
+  padding: 3rem 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  width: 50%;
+  padding: 0.8rem;
+}
+
+/* ===========================
+   TITRES SECTIONS
+=========================== */
+h2 {
+  color: #00aaff;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* ===========================
+   MEDIA QUERIES
+=========================== */
+@media (max-width: 768px) {
+  .projet-ligne,
+  .experience-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

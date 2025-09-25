@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mathias DAGBEDJI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <p>N'hésitez pas à m’envoyer un message pour toute demande ou collaboration.</p>
+
+        <!-- Formulaire de contact -->
+        <form method="post" action="envoyer_email.php" class="contact-form">
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email" placeholder="Votre email" required>
+
+            <label for="message">Message :</label>
+            <textarea name="message" id="message" placeholder="Votre message" required></textarea>
+
+            <button type="submit" name="envoyer" class="btn-green">Envoyer</button>
+        </form>
+
+        <!-- Contact alternatif -->
+        <p>Ou contactez-moi directement par email : <a href="mailto:mathiasdagbedji1@gmail.com">mathiasdagbedji1@gmail.com</a></p>
+    </section>
+</body>
+</html>
